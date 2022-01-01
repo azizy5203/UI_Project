@@ -111,7 +111,6 @@ function App() {
       <Routes>
         <Route path="/" element={<StDashboard coursesList={coursesList}/>}/>
         <Route path='/StudentCourses' element={<StudentCourses coursesList={coursesList}/>}/>
-        {/* <Route path='/StDashboard' element={<StDashboard coursesList={coursesList}/>}/> */}
       </Routes>
       </div>
     </Router>
