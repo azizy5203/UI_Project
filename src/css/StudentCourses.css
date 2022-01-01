@@ -19,7 +19,7 @@
 .Container input{
     grid-column: 3;
     grid-area: 'input';
-    border:1px solid #4CAAFB;
+    border:2px solid #4CAAFB;
     padding-left: 1em;
     border-radius: 20px;
     width: 300px;
@@ -38,11 +38,14 @@
     height: fit-content;
     border-radius: 20px;
     padding: 1em;
-    background-color: #bed2df;
+    background-color: #F1F2F3;
     display: grid;
     grid-row-gap: 1px;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto auto;
+}
+.itemContainer:hover{
+    box-shadow: 0 0 5px 1px #1C81E7;
 }
 
 .itemContainer h2{

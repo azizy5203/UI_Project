@@ -13,7 +13,7 @@
   grid-column: 2;
   width: 55vw;
   min-height: 200px;
-  background: #d8e1e7 ;
+  background: hsl(210, 8%, 95%) ;
   border-radius: 20px;
   padding: 1em;
   border: 2px solid #2699FB;
