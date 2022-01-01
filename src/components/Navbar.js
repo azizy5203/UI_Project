@@ -13,7 +13,7 @@ const Navbar = ({type}) => {
             <a href=""><img src = {person} className = "person" alt=''></img></a>
             <nav>
                 <ul className = "nav-area">
-                <li><Link to = "/stdashboard">Home</Link></li>
+                <li><Link to = "/">Home</Link></li>
                 <li><a href = "#">Attendance</a></li>
                 <li><a href = "#">Grades</a></li>
                 <li><Link to = "/StudentCourses">Courses</Link></li>

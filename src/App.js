@@ -35,7 +35,7 @@ function App() {
     },
     {
       title:'Intro to NLP',
-      desc:'This course goes through the  dddddddddddddtechniques of Natural Language Proccessing dddd ddddd dddd ffff ffff',
+      desc:'This course goes through the techniques of Natural Language Proccessing',
       creds:'3hrs',
     },
     {
@@ -68,8 +68,9 @@ function App() {
       <div className="App">
         <Navbar type={type}/>
       <Routes>
-          <Route path='/StudentCourses' element={<StudentCourses coursesList={coursesList}/>}/>
-          <Route path='/StDashboard' element={<StDashboard coursesList={coursesList}/>}/>
+        <Route path="/" element={<StDashboard coursesList={coursesList}/>}/>
+        <Route path='/StudentCourses' element={<StudentCourses coursesList={coursesList}/>}/>
+        {/* <Route path='/StDashboard' element={<StDashboard coursesList={coursesList}/>}/> */}
       </Routes>
       </div>
     </Router>
