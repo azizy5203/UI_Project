@@ -23,16 +23,16 @@
     padding-left: 1em;
     border-radius: 20px;
     width: 300px;
-    max-height: 40px;
+    min-height: 40px;
     text-decoration-color: #4CAAFB;
     font-weight: bold;
     color: #4CAAFB;
     justify-self: end;
+    align-self: center;
     outline: none;
 }
 
 .itemContainer{
-    grid-row: 2;
     grid-area: 'courseItem';
     width: 280px;
     height: fit-content;
