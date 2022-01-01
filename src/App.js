@@ -34,9 +34,8 @@ function App() {
       creds:'3hrs',
     },
     {
-      title:'Advanced Python',
-      desc:`This course goes through the 
-            advanced topics`,
+      title:'Intro to NLP',
+      desc:'This course goes through the  dddddddddddddtechniques of Natural Language Proccessing dddd ddddd dddd ffff ffff',
       creds:'3hrs',
     },
     {

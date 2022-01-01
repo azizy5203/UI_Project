@@ -6,7 +6,9 @@ const StDashboard = ({coursesList}) => {
             {coursesList.map((course)=>(
                 <div className='CourseItem'>
                     <h1 className='CourseHeader'>{course.title}</h1>
-                    <p>{course.desc}</p>
+                    <center>
+                        <p>{course.desc}</p>
+                    </center>
                     <button className='filledBtn'>view</button>
                     <a className='link'>course page</a>
                 </div>

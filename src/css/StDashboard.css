@@ -11,7 +11,7 @@
 }
 .DbContainer .CourseItem{
   grid-column: 2;
-  min-width: 55vw;
+  width: 55vw;
   min-height: 200px;
   background: #d8e1e7 ;
   border-radius: 20px;
@@ -26,6 +26,7 @@
   color: #7F7F7F;
   font-weight: bold;
   margin-top: 10px;
+  width: 60%;
 }
 .DbContainer .CourseItem .filledBtn{
   background: #2699FB;
