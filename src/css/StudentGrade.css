@@ -1,0 +1,130 @@
+.topContainer{
+    padding: 1em;
+    display: grid;
+    column-gap: 0;
+    grid-template-columns: auto auto auto ;
+    grid-template-areas: 
+    "header header input"
+}
+
+.topContainer h1{
+    grid-area: 'header';
+    grid-column: 1/2;
+    justify-self: start;
+    width: auto;
+    font-size: 50px;
+    color: #4CAAFB;
+}
+
+
+.topContainer input{
+    grid-area: 'input';
+    grid-column: 3;
+    border:2px solid #4CAAFB;
+    padding-left: 1em;
+    border-radius: 20px;
+    width: 300px;
+    min-height: 40px;
+    text-decoration-color: #4CAAFB;
+    font-weight: bold;
+    color: #4CAAFB;
+    justify-self: end;
+    align-self: center;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.gradeItemContainer{
+    display: grid;
+    padding: 1em;
+    row-gap: 0;
+}
+
+.gradeItemContainer .gradeItem{
+    height: 50%;
+    grid-area: 'gradeItem';
+    grid-column: 1/3;
+    justify-self: center;
+    border-radius: 20px;
+    border: 2px solid #0392DF;
+    width: 90%;
+    padding: 2em;
+    background-color: #F1F2F3;
+    display: grid;
+    row-gap: 1em;
+    grid-template-columns: 20% 40% 10% 20%;
+    grid-template-rows: repeat(3,auto);
+}
+
+.gradeItemContainer .gradeItem h2{
+    grid-column: 1/4;
+    grid-row: 1;
+    justify-self: start;
+    color: #4CAAFB;
+}
+
+.gradeItemContainer .gradeItem h4{
+    justify-self: start;
+    grid-column: 1/4;
+    grid-row: 2;
+    color: #4CAAFB;
+
+}
+
+.gradeItemContainer .gradeItem ul{
+    grid-column: 1;
+    grid-row: 3;
+    justify-self: start;
+    list-style: none;
+    height: fit-content;
+
+}
+.gradeItemContainer .gradeItem ul li{
+    font-weight: 500;
+}
+.gradeItemContainer .gradeItem ul li b{
+    color: #4CAAFB ;
+}
+
+
+.gradeItemContainer .gradeItem img{
+    grid-column: 2;
+    grid-row: 3;
+    justify-self: start;
+    align-self: flex-start;
+    width: 50%;
+    height: 50%;
+    filter: invert(71%) sepia(200%) saturate(6055%) hue-rotate(183deg) brightness(110%) contrast(98%);
+    transform: translate(0 ,-30px);
+
+}
+
+.gradeItemContainer .gradeItem .sep{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    justify-self: center;
+    align-self: flex-start;
+    border-left: 3px solid #4CAAFB;
+    height: 500%;
+    transform: translate(140px ,0);
+
+}
+
+.gradeItemContainer .gradeItem .letterGrade{
+    grid-column: 4;
+    grid-row: 3;
+    border: 2px solid #4CAAFB;
+    border-radius: 15px;
+    align-self: flex-start;
+    width: 60%;
+    height: 60%;
+    text-align: center;
+    transform: translate(40px ,-60px);
+}
+.gradeItemContainer .gradeItem .letterGrade h1 {
+    font-size: 60pt;
+    color: #0392DF;
+    transform: translate(0 ,13px);
+    
+}
+

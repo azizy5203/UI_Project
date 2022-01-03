@@ -1,4 +1,3 @@
-import logo from '../assets/logo.svg'
 import '../css/StDashboard.css'
 const StDashboard = ({coursesList}) => {
     return (
@@ -9,8 +8,8 @@ const StDashboard = ({coursesList}) => {
                     <center>
                         <p>{course.desc}</p>
                     </center>
-                    <button className='filledBtn'>view</button>
-                    <a className='link'>course page</a>
+                    <button className='filledBtn'>visit</button>
+                    <a className='link'>last lecture</a>
                 </div>
             ))}
             

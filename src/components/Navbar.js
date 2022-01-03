@@ -13,11 +13,11 @@ const Navbar = ({type}) => {
             <a href=""><img src = {person} className = "person" alt=''></img></a>
             <nav>
                 <ul className = "nav-area">
-                <li><Link to = "/">Home</Link></li>
-                <li><a href = "#">Attendance</a></li>
-                <li><a href = "#">Grades</a></li>
-                <li><Link to = "/StudentCourses">Courses</Link></li>
-                <li><a href = "#">Help</a></li>
+                    <li><Link to = "/">Home</Link></li>
+                    <li><a href = "#">Attendance</a></li>
+                    <li><Link to = "/StudentGrade">Grades</Link></li>
+                    <li><Link to = "/StudentCourses">Courses</Link></li>
+                    <li><Link to = "/ProfessorDashboard">Help</Link></li>
                 </ul>
                 <span className = "type">{type}</span>
             </nav>

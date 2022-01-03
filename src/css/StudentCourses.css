@@ -70,34 +70,3 @@
     grid-column: 2;
     grid-row: 3;
 }
-
-
-
-
-
-
-/* * {
-    padding: 0px;
-    margin: 0px;
-}
-.itemContainer{
-    width: 500px;
-    height: 250px;
-    border-radius: 50px;
-    margin-top: 200px;
-    margin-left: 200px;
-    background-color: #bed2df;
-}
-.content{
-    padding-left: 50px;
-    padding-top: 20px;
-    color: #4caafb;
-}
-.desc{
-    width: 200px;
-    color: #0079e1;
-    font-weight: bold;
-}
-.content img{
-    padding-left: 250px;
-} */

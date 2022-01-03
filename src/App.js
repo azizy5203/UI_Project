@@ -6,16 +6,8 @@ import StDashboard from './components/StDashboard';
 import StudentCourses from './components/StudentCourses';
 import ProfessorDashboard from './components/ProfessorDashboard';
 import Navbar from './components/Navbar';
+import StudentGrade from './components/StudentGrade';
 
-
-
-function createtemp(data){
-  return (<ProfessorDashboard
-  emoji={data.emoji}
-  name={data.name}
-  meaning={data.meaning}
-  ></ProfessorDashboard>)
-}
 
 
 
@@ -28,53 +20,69 @@ function App() {
       desc:`This course goes through the 
             advanced topics`,
       creds:'3hrs',
+      grade:'B',
     },
     {
       title:'C++ Graphics',
       desc:`This course goes through the 
             advanced topics in C++`,
       creds:'3hrs',
+      grade:'F',
+
     },
     {
       title:'Advanced ML',
       desc:`This course goes through the 
             advanced topics in ML`,
       creds:'3hrs',
+      grade:'B',
+
     },
     {
       title:'Advanced Python',
       desc:`This course goes through the 
             advanced topics`,
       creds:'3hrs',
+      grade:'C',
+
     },
     {
       title:'Intro to NLP',
       desc:'This course goes through the techniques of Natural Language Proccessing',
       creds:'3hrs',
+      grade:'A',
+
     },
     {
       title:'C++ Graphics',
       desc:`This course goes through the 
             advanced topics in C++`,
       creds:'3hrs',
+      grade:'B',
+
     },
     {
       title:'Advanced ML',
       desc:`This course goes through the 
             advanced topics in ML`,
       creds:'3hrs',
+      grade:'C',
+
     },
     {
       title:'Advanced Python',
       desc:`This course goes through the 
             advanced topics`,
       creds:'3hrs',
+      grade:'G',
     },
     {
       title:'C++ Graphics',
       desc:`This course goes through the 
             advanced topics in C++`,
       creds:'3hrs',
+      grade:'F',
+
     },
   ]
   //for Prof Dashboard
@@ -111,6 +119,8 @@ function App() {
       <Routes>
         <Route path="/" element={<StDashboard coursesList={coursesList}/>}/>
         <Route path='/StudentCourses' element={<StudentCourses coursesList={coursesList}/>}/>
+        <Route path='/StudentGrade' element={<StudentGrade coursesList={coursesList}/>}/>
+        <Route path='/ProfessorDashboard' element={<ProfessorDashboard/>}/>
       </Routes>
       </div>
     </Router>
