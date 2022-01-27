@@ -1,10 +1,8 @@
 import './css/App.css';
 
-import { useState } from 'react';
 import {BrowserRouter as Router, Routes, Route  } from 'react-router-dom'
 import StDashboard from './components/StDashboard';
 import StudentCourses from './components/StudentCourses';
-import ProfessorDashboard from './components/ProfessorDashboard';
 import Navbar from './components/Navbar';
 import StudentGrade from './components/StudentGrade';
 
@@ -97,7 +95,6 @@ function App() {
         <Route path="/" element={<StDashboard coursesList={coursesList}/>}/>
         <Route path='/StudentCourses' element={<StudentCourses coursesList={coursesList}/>}/>
         <Route path='/StudentGrade' element={<StudentGrade coursesList={coursesList}/>}/>
-        <Route path='/ProfessorDashboard' element={<ProfessorDashboard/>}/>
       </Routes>
       </div>
     </Router>
