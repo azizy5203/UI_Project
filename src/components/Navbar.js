@@ -10,11 +10,11 @@ const Navbar = ({type}) => {
             <span className = "sim">SIM</span>
             
             <a href="https://www.google.com"><img src = {noti} className = "notif" alt=''/></a>
-            <a href=""><img src = {person} className = "person" alt=''></img></a>
+            <Link to="/"><img src = {person} className = "person" alt=''></img></Link>
             <nav>
                 <ul className = "nav-area">
                     <li><Link to = "/">Home</Link></li>
-                    <li><a href = "#">Attendance</a></li>
+                    <li><Link to = "/">Attendance</Link></li>
                     <li><Link to = "/StudentGrade">Grades</Link></li>
                     <li><Link to = "/StudentCourses">Courses</Link></li>
                     <li><Link to = "/ProfessorDashboard">Help</Link></li>

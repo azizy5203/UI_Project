@@ -1,4 +1,5 @@
 import '../css/StDashboard.css'
+import {Link} from 'react-router-dom' 
 const StDashboard = ({coursesList}) => {
     return (
         <div className='DbContainer'>
@@ -9,7 +10,7 @@ const StDashboard = ({coursesList}) => {
                         <p>{course.desc}</p>
                     </center>
                     <button className='filledBtn'>visit</button>
-                    <a className='link'>last lecture</a>
+                    <Link to="/" className='link'>last lecture</Link>
                 </div>
             ))}
             

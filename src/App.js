@@ -12,7 +12,6 @@ import StudentGrade from './components/StudentGrade';
 
 
 function App() {
-  var [type,setType] = useState("student")
   //for students pages
   const coursesList = [
     {
@@ -86,36 +85,14 @@ function App() {
     },
   ]
   //for Prof Dashboard
-  const Data = [
-    {
-      id: 1,
-    
-      name: "python",
-      meaning:
-        "“You can do that!” or “I feel strong!” Arm with tense biceps. Also used in connection with doing sports, e.g. at the gym."
-    },
-    {
-      id: 2,
-
-      name: "oop",
-      meaning:
-        "Two hands pressed together. Is currently very introverted, saying a prayer, or hoping for enlightenment. Is also used as a “high five” or to say thank you."
-    },
-    {
-      id: 3,
-   
-      name: "Data structure",
-      meaning:
-        "This is funny! A smiley face, rolling on the floor, laughing. The face is laughing boundlessly. The emoji version of “rofl“. Stands for „rolling on the floor, laughing“."
-    }
-  ];
+ 
 
 
 
   return (
     <Router>
       <div className="App">
-        <Navbar type={type}/>
+        <Navbar type="student"/>
       <Routes>
         <Route path="/" element={<StDashboard coursesList={coursesList}/>}/>
         <Route path='/StudentCourses' element={<StudentCourses coursesList={coursesList}/>}/>
